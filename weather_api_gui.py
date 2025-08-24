@@ -131,7 +131,7 @@ class WeatherApp:
 
         try:
             BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-            API_KEY = "4e285445d0d3bfcc9cbc7cb84ae15b53"
+            API_KEY = "Enter your own api key"
             url = BASE_URL + "appid=" + API_KEY + "&q=" + city + \
                 "&units=metric"  # Added units=metric for Celsius
 
@@ -287,3 +287,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = WeatherApp(root)
     root.mainloop()
+
